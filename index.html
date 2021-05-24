@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="./styles/styles.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@700&family=Lexend+Deca&display=swap" rel="stylesheet">
+  
+  <title>Frontend Mentor | Stats preview card component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <div id="card-body">
+    <div id="card-text-body">
+      <h1 class="main-heading-stats">Get <span id="insights">insights</span> that help your business grow.</h1>
+
+      <p class="main-paragraph">Discover the benefits of data analytics and make better decisions regarding revenue, customer 
+      experience, and overall efficiency.</p>
+      
+      <div id="stats">
+        <div>
+          <p class="main-heading-stats">10k+</p> 
+          <p class="stats-heading">COMPANIES</p>
+        </div>
+        <div>
+          <p class="main-heading-stats">314</p> 
+          <p class="stats-heading">TEMPLATES</p>
+        </div>
+        <div>
+          <p class="main-heading-stats">12M+</p> 
+          <p class="stats-heading">QUERIES</p>
+        </div>
+      </div>
+    </div>
+    <div id="card-image">
+      <div id="overlay"></div>
+      <picture>
+        <source 
+          srcset="./images/image-header-desktop.jpg"
+          media="(min-width:1200px)"
+        >
+        <!-- <source 
+          srcset='./images/image-header-desktop.jpg'
+          media="(min-width: 1200px)"
+        /> -->
+        <img
+          src="./images/image-header-mobile.jpg"
+          alt="women talking to each other"
+        >
+      </picture>
+    </div>
+  </div>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Adrian V.</a>.
+  </div>
+</body>
+</html>
